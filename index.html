@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survy form</title>
+    <link href="style.css", rel="stylesheet">
+</head>
+<body>
+  <h1 id="title">Data Capture form</h1>
+  <p id="description">Thanks for answering this survey</p>
+    <div id="survey" class="surveys">
+      <main>
+      <section>
+          <form id="survey-form"> 
+            <fieldset>
+              <legend>Name</legend>
+              <label for="name" id="name"><input id="name" type="text" name="Enter your name" placeholder="Enter your name"></label>
+              <legend>E-mail</legend>
+              <label for="email"><input id="email" type="email" name="e-mail" placeholder="Enter your e-mail" required></label>
+              <legend>Number</legend>
+              <label for="number"><input id="number" type="tel" name="number" placeholder="Enter you number" max="13" min="11"> </label>
+            </fieldset>
+
+            <fieldset>
+              <legend>Recomendations</legend>
+              <label for="dropdown">How you came tho this form:</label>
+              <select id="dropdown" name="dropdown">
+                <option value="option1">Instagram </option>
+                <option value="option2">Whats app</option>
+              </select>
+                <legend class="recomendations">Would you recommend the developer Adriel to a friend?</legend>
+              <label> <input type="radio" name="Choice" value="Yes" checked> Defnitely</label>
+              <label> <input type="radio" name="Choice" value="Maybe"> Maybe</label>
+              <label> <input type="radio" name="Choice" value="Not shure">Not shure</label>
+
+            </fieldset>
+            
+            <fieldset>
+              <legend> What type of job do you need</legend>
+              <label for="website">Website</label>
+                <input type="checkbox" name="preferences" id="option1" value="option1">
+              <label for="Engenering">Engenering projets</label>
+                <input type="checkbox" name="preferences" id="option2" value="option2">
+            </fieldset>
+
+            <fieldset>
+              <legend>Add an extra comente please:</legend>
+              <textarea name="extra-comentes" id="coments" cols="30" rows="10" placeholder="Enter your comentes here:"></textarea>
+              <br><button type="submit" id="submit"> Submit</button>
+            </fieldset>
+        </form>
+      </section>
+      </main>
+    </div> 
+</body>
+
+</html>
